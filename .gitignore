@@ -1,2 +1,3 @@
 __pycache__/
 .venv
+benchmark_results/

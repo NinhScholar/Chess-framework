@@ -1,0 +1,133 @@
+{
+  "dataset_sha256": "c963dbec96a9622262a92d865850e04d9e1787b2295d9e726f532bcb8fed541f",
+  "puzzle_count": 999,
+  "comparison_scope": "Latest recorded full run for each agent before exchange safety; separate execution times. Not a measurement of the current safety-enabled revision.",
+  "agents": {
+    "MCTS": {
+      "run_id": "999-20261104T062121330205Z",
+      "started_at_utc": "2026-11-04T06:21:21.331166+00:00",
+      "finished_at_utc": "2026-11-04T06:56:40.709209+00:00",
+      "workers": 4,
+      "hard_trial_timeout_seconds": 60.0,
+      "seed": 0,
+      "agent_config": {
+        "exploration": 1.4,
+        "rollout_depth": 30,
+        "simulations": 200
+      },
+      "agent_source_sha256": "49490de97a8cc31b7d0af9028ef679faff685ff36acb19a8b4b04cc57f84c071",
+      "raw_results_sha256": "cbc8cec3d1f8b18b0542a93eecc69456bfa1a1bc9e1188c80fd04c3a51f887ae",
+      "groups": {
+        "all": {
+          "trials": 999,
+          "full_solutions": 372,
+          "accepted_first_moves": 381,
+          "status_counts": {
+            "passed": 372,
+            "reference_deviation": 627
+          },
+          "mean_search_seconds_per_puzzle": 6.119205413813664
+        },
+        "mate_in_one": {
+          "trials": 333,
+          "full_solutions": 333,
+          "accepted_first_moves": 333,
+          "status_counts": {
+            "passed": 333
+          },
+          "mean_search_seconds_per_puzzle": 4.887381203903884
+        },
+        "mate_in_two": {
+          "trials": 333,
+          "full_solutions": 35,
+          "accepted_first_moves": 35,
+          "status_counts": {
+            "reference_deviation": 298,
+            "passed": 35
+          },
+          "mean_search_seconds_per_puzzle": 6.584575241140861
+        },
+        "mate_in_three": {
+          "trials": 333,
+          "full_solutions": 4,
+          "accepted_first_moves": 13,
+          "status_counts": {
+            "reference_deviation": 329,
+            "passed": 4
+          },
+          "mean_search_seconds_per_puzzle": 6.885659796396248
+        }
+      }
+    },
+    "mcts_improve": {
+      "run_id": "999-20261104T092931668271Z",
+      "started_at_utc": "2026-11-04T09:29:31.668271+00:00",
+      "finished_at_utc": "2026-11-04T09:38:27.280745+00:00",
+      "workers": 4,
+      "hard_trial_timeout_seconds": 60.0,
+      "seed": 0,
+      "agent_config": {
+        "exploration": 1.4,
+        "progressive_expansion": true,
+        "rollout_depth": 30,
+        "rollout_randomness": 0.15,
+        "seed": 0,
+        "simulations": 200,
+        "widening_base": 2.0,
+        "widening_exponent": 0.5
+      },
+      "agent_source_sha256": "f13e8881026ce05ade8f79606f8ee816912346996252c51205fe72384e69cd60",
+      "raw_results_sha256": "434a186180bed0c9d58ed06a8db93c87771d6bb2ca44593b2b4cf3d8fdf4c0c9",
+      "groups": {
+        "all": {
+          "trials": 999,
+          "full_solutions": 874,
+          "accepted_first_moves": 874,
+          "status_counts": {
+            "passed": 874,
+            "reference_deviation": 125
+          },
+          "mean_search_seconds_per_puzzle": 1.277713036536276
+        },
+        "mate_in_one": {
+          "trials": 333,
+          "full_solutions": 333,
+          "accepted_first_moves": 333,
+          "status_counts": {
+            "passed": 333
+          },
+          "mean_search_seconds_per_puzzle": 0.0032540345344239394
+        },
+        "mate_in_two": {
+          "trials": 333,
+          "full_solutions": 333,
+          "accepted_first_moves": 333,
+          "status_counts": {
+            "passed": 333
+          },
+          "mean_search_seconds_per_puzzle": 0.37704496366351525
+        },
+        "mate_in_three": {
+          "trials": 333,
+          "full_solutions": 208,
+          "accepted_first_moves": 208,
+          "status_counts": {
+            "passed": 208,
+            "reference_deviation": 125
+          },
+          "mean_search_seconds_per_puzzle": 3.452840111410889
+        }
+      }
+    }
+  },
+  "original_matches_current_with_explicit_200_simulations": true,
+  "paired": {
+    "both_solved": 372,
+    "original_only": 0,
+    "improved_only": 502,
+    "neither": 125
+  },
+  "gain_full_solutions": 502,
+  "gain_percentage_points": 50.250250250250254,
+  "improved_run_matches_preserved_before_exchange_safety_source": true
+}

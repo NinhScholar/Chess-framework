@@ -1,0 +1,2 @@
+# Keep dataset fingerprints stable across Windows and Unix checkouts.
+benchmarks/data/*.json -text
