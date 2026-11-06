@@ -5,13 +5,16 @@ from .mcts_improve import MCTSImproveAgent
 from .stockfish_agent import StockfishAgent
 from .promotion_test_agent import PromotionTestAgent
 from .stockfish_agent_report import StockfishAgentReport
+from .alpha_beta_search import AlphaBetaSearchAgent
 
 AGENT_FACTORIES = {
     "Người chơi": HumanAgent,
     "Random": RandomAgent,
     "MCTS": lambda: MCTSAgent(),
     "mcts_improve": MCTSImproveAgent,
+    "AlphaBeta": lambda: AlphaBetaSearchAgent(),
+    "AlphaBeta_Search": lambda: AlphaBetaSearchAgent(),
     "Test phong tốt": PromotionTestAgent,
     "Stockfish": lambda: StockfishAgent(level=20),
     "StockfishReport": lambda: StockfishAgentReport(level=20)
-} 
+}
